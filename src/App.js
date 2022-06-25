@@ -79,11 +79,15 @@ function App() {
                     disabled={disabled}
                     onClick={() => {
                       setDisabled(true);
+                      videoRef.current.pause();
+
                       axios
                         .post("https://ru-hack-backend.herokuapp.com/sound", {
-                          userInput,
+                          userInput: userInput
+                            .replace("'", "_")
+                            .replace(/\n/g, " "),
                         })
-                        .then(function (response) {
+                        .then(function () {
                           axios({
                             url: "https://ru-hack-backend.herokuapp.com/download", //your url
                             method: "GET",
