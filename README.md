@@ -1,6 +1,6 @@
 # Help Ed Sing | RU Hacks 2022
 
-##🎵 Inspiration
+## 🎵 Inspiration
 Are you an Ed Sheeran fan? Are you the type to pay a fortune to hear him sing songs by other artists or even your own songs? Do you want to flex to your friends that Ed Sheeran gave you a shoutout even though he practically didn't? Well, this is app is for you! We all are Ed Sheeran fans and thought this application would bring joy to all other fans across the globe!
 ##🤔 What it does
 Users can enter words or lyrics and make Ed Sheeran sing those words/lyrics. Users can also download the generated audio file and share it with their friends!
