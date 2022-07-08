@@ -2,19 +2,19 @@
 
 ## 🎵 Inspiration
 Are you an Ed Sheeran fan? Are you the type to pay a fortune to hear him sing songs by other artists or even your own songs? Do you want to flex to your friends that Ed Sheeran gave you a shoutout even though he practically didn't? Well, this is app is for you! We all are Ed Sheeran fans and thought this application would bring joy to all other fans across the globe!
-##🤔 What it does
+## 🤔 What it does
 Users can enter words or lyrics and make Ed Sheeran sing those words/lyrics. Users can also download the generated audio file and share it with their friends!
 
-##😍 How we built it
+## 😍 How we built it
 Our entire web application was built using React; we designed our frontend using Figma; our backend is mainly based on node.js We used Google Cloud's speech-to-text API to classify all the words in Ed Sheeran's songs. We then stored words in buckets on a CockroachDB cluster. In our backend, to process and concatenate words send in from the client-side/user, we used FFmpeg (since our audio files were in .wav and not .mp3). We used Twilio SendGrid to send the Ed Sheeran-generated audio file to other people's emails. 
 ![techstack](https://cdn.discordapp.com/attachments/989949757751427117/990425587149598730/unknown.png)
-##😢 Challenges we ran into
+## 😢 Challenges we ran into
 We ran into many challenges, one of them being Cloud's speech-to-text API not understanding Ed Sheeran's accent and classifying the wrong words. Another challenge we faced was with the timestamp function from google Cloud's speech-to-text API. For some reason, words were given timestamps of .01 seconds, which was so frustrating!!! But we pulled through by adding more conditional statements and slowing down the audio as well as editing the config variable to recognize en-GB, or in other words, British accents better. I guess this portrays the digital divide and bias Cloud's speech recognition API has towards people with accents different than the American accent. Come on Google :(
-##🙌 Accomplishments that we're proud of
+## 🙌 Accomplishments that we're proud of
 We are so proud that we were able to build a working product, even with the time constraint, for judges to test out(link below).
-##😎 What we learned
+## 😎 What we learned
 We learned how to use the FFmpeg software, Cloud's text-to-speech API, CockroachDB, and Twilio SendGrid.
-##😉 What's next for Help Ed Sing
+## 😉 What's next for Help Ed Sing
 Something we really wanted to work on was the cohesion of sounds  and some more similarity word embeddings to make the output/generated audio of Ed singing more natural and smooth. Perhaps Ed will get a duo.... Maybe Adele, Harry Styles?
 
 # Our Backend
